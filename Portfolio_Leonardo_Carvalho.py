@@ -31,7 +31,7 @@ def menu():
 
     st.sidebar.write("__Onde me Encontrar:__")
     st.sidebar.markdown(":briefcase: [LinkedIn](https://www.linkedin.com/in/l3omc/)")
-    st.sidebar.markdown(":memo: [Medium](https://leonardo-carvalho.medium.com/)")
+    
     st.sidebar.markdown(":space_invader: [Git Hub](https://github.com/l3omc)")
     st.sidebar.write(":e-mail: leocarva95@gmail.com")
       
