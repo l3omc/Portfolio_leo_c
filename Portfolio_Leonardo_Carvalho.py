@@ -157,7 +157,7 @@ def menu():
                                      
                             **Ferramentas:**  Python | Pandas | Seaborn | Matplotlib    
                          
-                         [Link github do Projeto](https://github.com/l3omc/python_script/tree/main/Analise_exploratoria/Projeto%201)   
+                         [Link github do Projeto](https://github.com/l3omc/analise_exploratoria_vendas/tree/main)   
                          [Link post no Medium](https://leonardo-carvalho.medium.com/explorando-vendas-com-python-uma-an%C3%A1lise-de-dados-do-zero-ao-insight-1e8c63d083af)
                         ''')
            
