@@ -241,7 +241,155 @@ def menu():
         
         
     with tab2: # ENGLISH VERSION
-        st.write('#### :books: IN CONSTRUCTION')
+        
+        st.write('#### :books: Studying ')
+
+        with st.expander('Data Analysis Tools '):            
+            st.markdown(''' Currently in the final stage of the **BI Analyst** program at DNC School and **Data Analysis Enhancement** at UFMA  
+                    - Development of advanced dashboards with Power BI and Excel.    
+                    - Data cleaning, processing, and organization with Excel and Python.      
+                    - Application of best practices in exploratory analysis and data visualization.    
+                    -- **Tools used:** Power BI | Excel | Python | Pandas | Numpy | SQL | Matplotlib | requests | BeautifulSoup
+
+                        ''')
+        with st.expander('Data Science Tools '):
+            st.markdown(''' Currently enrolled in the **Data Scientist** program at DNC School.    
+                            - Statistical modeling, data visualization, and building machine learning pipelines.    
+                            - Development of interactive applications with Streamlit.   
+                            -- **Tools used:** Python | Seaborn | Statsmodels | Scikit-learn | Streamlit | Matplotlib |
+                        ''')
+
+
+        # ----------------- EXPERIENCES AND PROJECTS -------
+        st.write('#### :coffee: Professional Experiences and Projects')
+
+        with st.expander('Product Sales Dashboard (Short Project) '):
+             st.markdown('''    
+                         **Project Summary:**    
+                                     - Data source: Kaggle   
+                                     - Visualization: Power BI    
+                                     - Highlights: Customer profiles, total sales, sales capture locations, data cleaning, lookup with VLOOKUP,
+                          pivot tables, data validation.
+
+                        **Tools:** Excel 
+                        ''')
+             bi2 = Image.open('./IMAGENS/EXCEL1.png') 
+             bi3 = Image.open('./IMAGENS/EXCEL2.png')           
+             colbi1,colbi2 = st.columns(2)
+             with colbi1:
+                 st.image(bi2, width=600)
+             with colbi2:
+                 st.image(bi3, width=600)
+
+        with st.expander('Store Sales Dashboard (Short Project) '):
+             st.markdown('''    
+                         **Project Summary:**    
+                                     - Data source: Kaggle   
+                                     - Visualization: Power BI    
+                                     - Highlights: Customer profiles, total sales, sales capture locations.
+
+                        **Tools:** Power BI | Excel 
+                        ''')
+             bi2 = Image.open('./IMAGENS/powerbi2.png') 
+             bi3 = Image.open('./IMAGENS/powerbi3.png')           
+             colbi1,colbi2 = st.columns(2)
+             with colbi1:
+                 st.image(bi2, width=600)
+             with colbi2:
+                 st.image(bi3, width=600)
+
+        with st.expander('Gasoline Sales Dashboard (Short Project) '):
+             st.markdown('''    
+                         **Project Summary:**    
+                                     - Data source: Kaggle   
+                                     - Visualization: Power BI    
+                                     - Highlights: Variation in average gasoline prices, regions with highest impact, monthly trends.  
+
+                        **Tools:** Power BI | Excel | Python
+                        ''')
+             bi1 = Image.open('./IMAGENS/power bi 1.png')            
+             colbi1 = st.columns(3)
+             with colbi1[1]:
+                 st.image(bi1, width=400)
+
+        with st.expander('ETL Exploratory Analysis of Product Sales (Short Project) '):
+             st.markdown(''' 
+                         A simple exploratory analysis project for a sales company, with the main goal of answering some key business questions.     
+                            **Project Summary:**       
+                                     - Data source: Kaggle     
+                                     - Visualization: Python      
+
+                            **Tools:** Python | Pandas | Seaborn | Matplotlib    
+
+                         [GitHub Project Link](https://github.com/l3omc/analise_exploratoria_vendas/tree/main)   
+                         [Medium Post Link](https://leonardo-carvalho.medium.com/explorando-vendas-com-python-uma-an%C3%A1lise-de-dados-do-zero-ao-insight-1e8c63d083af)
+                        ''')
+
+        with st.expander('Meteorology Analyst '):
+             st.markdown(''' **AEROESPACIAL ENGENHARIA** November 2024 - February 2025  
+                         Extracting, analyzing, and processing meteorological data for climate risk projects using Python and Excel.  
+                         Development of thematic maps for environmental risk assessment along transmission lines using open-source software such as QGIS.
+                        ''')
+
+        with st.expander('Geoprocessing Analyst '):
+             st.markdown('''
+                         **INOVAGRO CONSULTORIA** July 2024 - November 2024  
+                            Production of thematic maps for environmental analyses using satellite images and cartographic databases with QGIS.  
+                            Field topographic surveys with GNSS RTK, use of AutoCAD Civil 3D for creating topographic maps for client delivery.  
+                            Drone aerial surveys, with image processing in Agisoft Metashape for orthomosaic generation.  
+                        ''')
+
+        #------------- EDUCATION ----
+        st.write('#### :mortar_board: Education')
+        with st.expander('Undergraduate'):
+            st.markdown(''' - *Bachelor’s Degree in Meteorology*   
+                        *Federal University of Santa Maria, March 2016 - January 2022*   
+                        Member of the Micrometeorology and Instrumentation Laboratory (LUMET), involved in research projects including the installation of micrometeorological towers, data processing, and surface-atmosphere interaction modeling.  
+                        Thesis: Evaluation of CO2 flux estimates using remote sensing.   
+                        ''')
+
+        with st.expander('Technical Education'):          
+            st.markdown(''' 
+                        - *Technician in Geoprocessing*  
+                          *Federal University of Santa Maria, March 2024 - present*  
+
+                        - *Technician in Internet Informatics*  
+                          *Federal University of Santa Maria, March 2016 - January 2022*  
+
+                        - *Technician in Systems Development*  
+                          *Federal University of Santa Maria, March 2016 - January 2022*  
+                        ''')
+
+        with st.expander('Courses'):
+            st.markdown('''
+                - BI Analyst  
+                    DNC     
+                        Course topics:  
+                        - Power BI - Intermediate level  
+                        - Excel - Intermediate level    
+                        - SQL - Data analysis oriented   
+
+                    ''')    
+            st.markdown('''
+                - Data Analysis  
+                    Federal University of Maranhão    
+                        Course topics:  
+                        - Power BI - Intermediate level  
+                        - Excel - Intermediate level  
+                        - SQL - Data analysis oriented  
+
+                - Data Scientist     
+                    DNC    
+                        Course topics:  
+                        - Power BI - Intermediate level
+                        - Excel - Intermediate level  
+                        - SQL - Data analysis oriented  
+                ''')
+
+
+
+            # ------------------------------------------------------------------------
+        
 
         
     with tab3: # PORTFOLIO GEOPROCESSING
