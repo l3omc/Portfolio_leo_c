@@ -37,9 +37,9 @@ def menu():
       
     st.sidebar.markdown('''__Minhas skills:__  
                         | Data analyst | Data cientist
-                        | R | Python | SQL 
-                        | QGIS | Power BI
-                        | Metabase | Excel avançado
+                        | R | Python | SQL | GEOPROCESSING
+                        | QGIS | GIS | CAD | Power BI
+                        | REMOTE SENSING | Excel 
                         | Microsoft Office
                         | ''')
   
@@ -51,21 +51,21 @@ def menu():
                          ''')
     
     st.sidebar.markdown('''__Palavras - Chave:__  
-                         WebScraping | Aprendizado de Máquina 
+                        | Aprendizado de Máquina 
                         |Data Visualization | Business Intelligence 
                         | Data Analytics | Ciência de Dados | Estatística | SQL | Machine Learning 
                         | Estatística Descritiva | Analista de Dados 
-                        | Data Scientist | Python | Big Data |
+                        | Data Scientist | Python | Big Data | SIG | QGIS | CAD | MAPAS TEMÁTICOS |
+                        GEOPROCESSAMENTO | SENSORIAMENTO REMOTO |
                         
                         ''')
   
     st.write(':wave: Sobre mim :')
     about = '''
-            Sou Meteorologista formado pela UFSM, possuo formação técnica em Desenvolvimento de Sistemas (IFSULDEMINAS) 
-            e em Técnico em sistemas para internet (IFNMG). Tenho ampla experiência em ETL de dados meteorológicos e sensoriamento remoto, utilizando as linguagens 
-            Python e R.
-            Atualmente estou migrando de área para trabalhar como analista de dados, onde venho evoluindo meus conhecimentos em elaboração de dashboards com Power BI
-            e tratamento de dados utilizando python e excel. 
+            Sou Meteorologista formado pela Universidade Federal de Santa Maria (UFSM), com formação técnica em Desenvolvimento de Sistemas pelo IFSULDEMINAS e atualmente formando no curso Técnico em Geoprocessamento pela UFSM.
+Possuo experiência em ETL de dados meteorológicos e sensoriamento remoto, utilizando principalmente as linguagens Python e R para processamento, análise e automação de dados.
+Tenho conhecimento sólido em Sistemas de Informação Geográfica (SIG), atuando na elaboração de mapas temáticos, análise topográfica e processamento de ortofotos, incluindo geração de produtos cartográficos com Metashape.
+Atualmente estou ampliando minhas competências em ciência de dados aplicada, com foco em desenvolvimento de dashboards interativos em Python, análise de grandes volumes de dados e aplicações voltadas a GIS, meteorologia e sensoriamento remoto.
     '''
     st.markdown(about)
     st.markdown('---')
@@ -78,6 +78,15 @@ def menu():
     with tab1: # CV
 
         st.write('#### :books: Estudando ')
+
+        with st.expander("GIS"):
+            st.markdown("""
+                -Estudo e desenvolvimento de **projetos práticos em Geoprocessamento**,
+                 com foco na elaboração de **mapas temáticos, análise espacial e processamento de dados geoespaciais**.  
+                **Ferramentas utilizadas:** | Python | QGIS | Streamlit | Matplotlib | Seaborn | CAD |  
+                **Fontes de dados:** | LANDSAT | SENTINEL | CBERS | VOOS AEROFOTOGRAMETRICOS |  
+                
+                """)
 
         with st.expander('Ferramentas de Análise de dados '):            
             st.markdown(''' Atualmente em fase final dos cursos de **Analista de BI** na escola DNC e **Aperfeiçoamento de Análise de dados pela UFMA**  
@@ -92,75 +101,26 @@ def menu():
                             - Modelagem estatística, visualização de dados e construção de pipelines de machine learning.    
                             - Desenvolvimento de aplicações interativas com Streamlit.   
                             -- **Ferramentas utilizadas :** Python | Seaborn| Statsmodels | Scikitlearn | Streamlit | Matplotlib |
-                        ''')
-        
+                        ''')\
+            
+         
         
         # ----------------- EXPERIENCIAS E PROJETOS -------
         st.write('#### :coffee: Experiências Profissionais e Projetos')
+
         
-        with st.expander('Dashboard Venda de Produtos. (Projeto curto) '):
-             st.markdown('''    
-                         **Resumo do Projeto:**    
-                                     - Fonte de dados: kaggle   
-                                     - Visualização  Power BI    
-                                     - Destaques:   Perfil de clientes, vendas totais, locais de captação de venda, tratamento de dados, busca utilizando procv,
-                          tabela dinâmica, validação de dados.
+        with st.expander('Analista em Geoprocessamento '):
+                st.markdown('''
+                         **INOVAGRO CONSULTORIA** Janeiro 2026 - Atual  
+                            Realizando a produção de mapas temáticos voltados para análises ambientais utilizando imagens de 
+                         satélite voos aerofotogramétricos e bases cartograficas com QGIS. 
+                            Levantamentos topográficos em campo com GNSS RTK, utilização do AutoCAD Civil 3D, para a elaboração de plantas topográficas, 
+                         para entrega ao cliente.
+                            Aerolevantamento com drone, posteriormente com o Agisoft Metashape é feito o processamento das
+                            imagens capturadas , visando a geração de ortomosaicos
 
-                        **Ferramentas:**  Excel 
                         ''')
-             bi2 = Image.open('./IMAGENS/EXCEL1.png') 
-             bi3 = Image.open('./IMAGENS/EXCEL2.png')           
-             colbi1,colbi2 = st.columns(2)
-             with colbi1:
-                 st.image(bi2, width=600)
-             with colbi2:
-                 st.image(bi3, width=600)
 
-        with st.expander('Dashboard Venda de Loja (Projeto curto) '):
-             st.markdown('''    
-                         **Resumo do Projeto:**    
-                                     - Fonte de dados: kaggle   
-                                     - Visualização  Power BI    
-                                     - Destaques:   Perfil de clientes, vendas totais, locais de captação de venda.
-
-                        **Ferramentas:** Power BI | Excel 
-                        ''')
-             bi2 = Image.open('./IMAGENS/powerbi2.png') 
-             bi3 = Image.open('./IMAGENS/powerbi3.png')           
-             colbi1,colbi2 = st.columns(2)
-             with colbi1:
-                 st.image(bi2, width=600)
-             with colbi2:
-                 st.image(bi3, width=600)
-
-        with st.expander('Dashboard Venda de Gasolina (Projeto curto) '):
-             st.markdown('''    
-                         **Resumo do Projeto:**    
-                                     - Fonte de dados: kaggle   
-                                     - Visualização : Power BI    
-                                     - Destaques: variação do preço médio da gasolina, regiões com maior impacto, tendências mensais.  
-
-                        **Ferramentas:** Power BI | Excel | Python
-                        ''')
-             bi1 = Image.open('./IMAGENS/power bi 1.png')            
-             colbi1 = st.columns(3)
-             with colbi1[1]:
-                 st.image(bi1, width=400)
-
-        with st.expander('ETL Análise exploratoria de Vendas de produto (Projeto curto) '):
-             st.markdown(''' 
-                         Este projeto simples de análise exploratória de uma empresa de vendas, tendo como objetivo principal responder algumas perguntas
-                         de interesse do dono da empresa.     
-                            **Resumo do Projeto:**       
-                                     - Fonte de dados: kaggle     
-                                     - Visualização python      
-                                     
-                            **Ferramentas:**  Python | Pandas | Seaborn | Matplotlib    
-                         
-                         [Link github do Projeto](https://github.com/l3omc/analise_exploratoria_vendas/tree/main)   
-                         [Link post no Medium](https://leonardo-carvalho.medium.com/explorando-vendas-com-python-uma-an%C3%A1lise-de-dados-do-zero-ao-insight-1e8c63d083af)
-                        ''')
-           
         with st.expander('Analista em Meteorologia '):
              st.markdown(''' **AEROESPACIAL ENGENHARIA** Novembro 2024 - Fevereiro 2025  
                          Realizando a extração, análise e o tratamento de dados meteorológicos para projetos de risco climático 
@@ -170,7 +130,7 @@ def menu():
 
                         ''')
 
-        with st.expander('Analista em Geoprocessamento '):
+        with st.expander('Analista em Geoprocessamento - ESTAGIO '):
              st.markdown('''
                          **INOVAGRO CONSULTORIA** Julho 2024 - Novembro 2024  
                             Realizando a produção de mapas temáticos voltados para análises ambientais utilizando imagens de 
@@ -196,13 +156,16 @@ def menu():
         with st.expander('Formação Técnica'):          
 
             st.markdown(''' 
-                        - *Técnico em Geoprocessamento*
+                - *Técnico em Agricultura de Precisão*    
+                *Universidade Federal de Santa Maria Março 2026- presente *
+                        
+                - *Técnico em Geoprocessamento*  
                 *Universidade Federal de Santa Maria Março 2024- presente *
                 
-                - *Técnico em Informática para Internet*
+                - *Técnico em Informática para Internet*  
                    *Universidade Federal de Santa Maria Março 2016 a janeiro 2022 *
 
-                - *Técnico em Desenvolvimento de sistemas*
+                - *Técnico em Desenvolvimento de sistemas*  
                     *Universidade Federal de Santa Maria Março 2016 a janeiro 2022 *
                         
                         ''')
@@ -390,11 +353,127 @@ def menu():
 
             # ------------------------------------------------------------------------
         
-
         
     with tab3: # PORTFOLIO GEOPROCESSING
         
-        st.write('#### :books: Em construção ')
+       # st.write('#### :books: Em construção ')
+        with st.expander("Análise Meteorológica — Precipitação Acumulada e Temperatura | RS / SC"  ) :   #### ----- MAPA USO DO SOLO ---
+             
+             st.markdown('''    
+                         **Resumo do Projeto:**    
+                                     - Fonte de dados: IBGE - ERA5    
+                                     - Visualização e Processamento no **Python**      
+                                     - Destaques: Analisar padrões espaciais de **precipitação acumulada e temperatura do ar em superfície** nos estados do **Rio Grande do Sul e Santa Catarina**, utilizando dados de reanálise climática.    
+  
+                        **Ferramentas:**  Python     
+                        ''')
+             bi2 = Image.open("./IMAGENS/prec_acumulada.png") 
+             bi3 = Image.open('./IMAGENS/temp_superficie.jpg')           
+             colbi1,colbi2 = st.columns(2)
+             with colbi1:
+                 st.image(bi2, width=600,
+                          caption="Precipitação acumulada — Rio Grande do Sul",
+                          use_container_width=True)
+             with colbi2:
+                 st.image(bi3, width=600,
+                         caption="Temperatura em superfície — Santa Catarina", 
+                           use_container_width=True)
+             
+
+        with st.expander('Mapa temático - Uso e ocupação do Solo São Gabriel - RS.  ') :   #### ----- MAPA USO DO SOLO ---
+             
+             st.markdown('''    
+                         **Resumo do Projeto:**    
+                                     - Fonte de dados: IBGE - MAPBIOMAS   
+                                     - Visualização  QGIS    
+                                     - Destaques:   Analisar a **dinâmica de uso e ocupação do solo no município de São Gabriel (RS)**     utilizando dados da plataforma MapBiomas, permitindo identificar mudanças no território entre áreas agrícolas, vegetação nativa e pastagens.   
+.                        **Ferramentas:**  QGIS    
+                        ''')
+             bi2 = Image.open('./IMAGENS/uso_do_solo_saogabriel_2000_2024.png')
+             st.image(bi2, width=600,
+                      caption="Mapa de Uso e Ocupação do Solo — São Gabriel (RS)",
+                                      use_container_width=True)
+
+        with st.expander('Mapa temático - Declividade Santa Maria - RS.  ') :   #### ----- MAPA DECLIVIDADE ---             
+             st.markdown('''    
+                         **Resumo do Projeto:**  
+                                     - Download do **MDE SRTM 30 m**  
+                                     - Fonte de dados: IBGE - SRTM 30m     
+                                     - Processamento no **QGIS**  
+                                        - Cálculo da declividade (Slope)
+                                        - Classificação das classes de relevo
+                                        - Elaboração de layout cartográfico          
+                                     - Destaques:  Geração de mapa de declividade a partir de MDE SRTM, classificação das classes de relevo e representação cartográfica.      
+                        **Ferramentas:**  QGIS    
+                        ''')
+             bi2 = Image.open('./IMAGENS/mapa_declividade_sm.png',)
+             st.image(bi2, width=600, 
+                      caption="Mapa de Declividade — Santa Maria (RS)",
+        use_container_width=True)
+                   
+        with st.expander('Dashboard Venda de Produtos. (Projeto curto) '):
+             st.markdown('''    
+                         **Resumo do Projeto:**    
+                                     - Fonte de dados: kaggle   
+                                     - Visualização  Power BI    
+                                     - Destaques:   Perfil de clientes, vendas totais, locais de captação de venda, tratamento de dados, busca utilizando procv,
+                          tabela dinâmica, validação de dados.
+
+                        **Ferramentas:**  Excel 
+                        ''')
+             bi2 = Image.open('./IMAGENS/EXCEL1.png') 
+             bi3 = Image.open('./IMAGENS/EXCEL2.png')           
+             colbi1,colbi2 = st.columns(2)
+             with colbi1:
+                 st.image(bi2, width=600)
+             with colbi2:
+                 st.image(bi3, width=600)
+
+        with st.expander('Dashboard Venda de Loja (Projeto curto) '):
+             st.markdown('''    
+                         **Resumo do Projeto:**    
+                                     - Fonte de dados: kaggle   
+                                     - Visualização  Power BI    
+                                     - Destaques:   Perfil de clientes, vendas totais, locais de captação de venda.
+
+                        **Ferramentas:** Power BI | Excel 
+                        ''')
+             bi2 = Image.open('./IMAGENS/powerbi2.png') 
+             bi3 = Image.open('./IMAGENS/powerbi3.png')           
+             colbi1,colbi2 = st.columns(2)
+             with colbi1:
+                 st.image(bi2, width=600)
+             with colbi2:
+                 st.image(bi3, width=600)
+
+        with st.expander('Dashboard Venda de Gasolina (Projeto curto) '):
+             st.markdown('''    
+                         **Resumo do Projeto:**    
+                                     - Fonte de dados: kaggle   
+                                     - Visualização : Power BI    
+                                     - Destaques: variação do preço médio da gasolina, regiões com maior impacto, tendências mensais.  
+
+                        **Ferramentas:** Power BI | Excel | Python
+                        ''')
+             bi1 = Image.open('./IMAGENS/power bi 1.png')            
+             colbi1 = st.columns(3)
+             with colbi1[1]:
+                 st.image(bi1, width=400)
+
+        with st.expander('ETL Análise exploratoria de Vendas de produto (Projeto curto) '):
+             st.markdown(''' 
+                         Este projeto simples de análise exploratória de uma empresa de vendas, tendo como objetivo principal responder algumas perguntas
+                         de interesse do dono da empresa.     
+                            **Resumo do Projeto:**       
+                                     - Fonte de dados: kaggle     
+                                     - Visualização python      
+                                     
+                            **Ferramentas:**  Python | Pandas | Seaborn | Matplotlib    
+                         
+                         [Link github do Projeto](https://github.com/l3omc/analise_exploratoria_vendas/tree/main)   
+                         [Link post no Medium](https://leonardo-carvalho.medium.com/explorando-vendas-com-python-uma-an%C3%A1lise-de-dados-do-zero-ao-insight-1e8c63d083af)
+                        ''')
+           
 #         
         
     with tab4: # Data analyst
