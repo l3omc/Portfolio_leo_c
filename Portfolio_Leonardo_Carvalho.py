@@ -36,7 +36,7 @@ def menu():
     st.sidebar.write(":e-mail: leocarva95@gmail.com")
       
     st.sidebar.markdown('''__Minhas skills:__  
-                        | Data analyst | Data cientist
+                        | Geospatial Analyst | Data cientist
                         | R | Python | SQL | GEOPROCESSING
                         | QGIS | GIS | CAD | Power BI
                         | REMOTE SENSING | Excel 
@@ -52,11 +52,11 @@ def menu():
     
     st.sidebar.markdown('''__Palavras - Chave:__  
                         | Aprendizado de Máquina 
-                        |Data Visualization | Business Intelligence 
+                        |Data Visualization | Business Intelligence | Geospatial Analyst 
                         | Data Analytics | Ciência de Dados | Estatística | SQL | Machine Learning 
-                        | Estatística Descritiva | Analista de Dados 
-                        | Data Scientist | Python | Big Data | SIG | QGIS | CAD | MAPAS TEMÁTICOS |
-                        GEOPROCESSAMENTO | SENSORIAMENTO REMOTO |
+                        | Estatística Descritiva | Analista de Dados Geoespaciais
+                        | Data Scientist | Python | Big Data | SIG | QGIS | CAD | Mapas Temáticos |
+                        Geoprocessamento | Sensoriamento Remoto |
                         
                         ''')
   
