@@ -72,8 +72,8 @@ def menu():
 
 
     # tab1, tab2 = st.tabs(['##### :globe_with_meridians: Maps', '##### :page_with_curl: CV'])
-    tab1, tab2, tab3 = st.tabs(['##### :page_with_curl: CV',"##### :page_with_curl: English CV",
-                                       "##### :world_map: Portfolio"])
+    tab1, tab2, tab3 = st.tabs(['📄:page_with_curl: CV',"📄 :page_with_curl: English CV",
+                                       "🌍 :world_map: Portfolio"])
 
     with tab1: # CV
 
