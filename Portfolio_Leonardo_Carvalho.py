@@ -62,24 +62,32 @@ def menu():
   
     st.write(':wave: Sobre mim :')
     about = '''
-            Sou Meteorologista formado pela Universidade Federal de Santa Maria (UFSM), com formação técnica em Desenvolvimento de Sistemas pelo IFSULDEMINAS e atualmente formando no curso Técnico em Geoprocessamento pela UFSM.
-Possuo experiência em ETL de dados meteorológicos e sensoriamento remoto, utilizando principalmente as linguagens Python e R para processamento, análise e automação de dados.
-Tenho conhecimento sólido em Sistemas de Informação Geográfica (SIG), atuando na elaboração de mapas temáticos, análise topográfica e processamento de ortofotos, incluindo geração de produtos cartográficos com Metashape.
-Atualmente estou ampliando minhas competências em ciência de dados aplicada, com foco em desenvolvimento de dashboards interativos em Python, análise de grandes volumes de dados e aplicações voltadas a GIS, meteorologia e sensoriamento remoto.
-    '''
+            Sou Meteorologista, graduado pela Universidade Federal de Santa Maria (UFSM), com formação técnica em Geoprocessamento pela mesma instituição e, atualmente, cursando a Especialização em Inteligência Artificial Aplicada às Geotecnologias. 
+            Atuo na área de geotecnologias, com experiência em processamento e análise de dados meteorológicos e de sensoriamento remoto. Trabalho com processos de ETL, automação e análise de dados utilizando principalmente Python e R, desenvolvendo soluções voltadas à integração, tratamento e exploração de grandes volumes de informações geoespaciais.
+            Tenho experiência em Sistemas de Informação Geográfica (SIG), elaboração de mapas temáticos, levantamentos e análises topográficas, aerolevantamentos, processamento de ortofotos e geração de produtos cartográficos por meio do Agisoft Metashape.
+            Atualmente, atuo como Junior Geospatial Analyst na SCCON, desenvolvendo atividades relacionadas à análise de dados geoespaciais, contribuindo para soluções baseadas em sensoriamento remoto e geotecnologias.
+            '''
     st.markdown(about)
     st.markdown('---')
 
 
     # tab1, tab2 = st.tabs(['##### :globe_with_meridians: Maps', '##### :page_with_curl: CV'])
-    tab1, tab2, tab3, tab4 = st.tabs(['##### :page_with_curl: CV',"##### :page_with_curl: English CV",
-                                       "##### :world_map: Portfolio", "##### :bar_chart: Data Analyst"])
+    tab1, tab2, tab3 = st.tabs(['##### :page_with_curl: CV',"##### :page_with_curl: English CV",
+                                       "##### :world_map: Portfolio"])
 
     with tab1: # CV
 
         st.write('#### :books: Estudando ')
+        
+        with st.expander("Especialização em Inteligência Artificial Aplicada a Geotecnologias"): # documentar melhor esta parte 
+            st.markdown("""
+                -A especialização capacita  na análise planejamento e execução de projetos voltado para geotecnologia e gestão de dados espaciais, utilizando conceitos modernos de programação  integrando conhecimento de algoritmos em Inteligência artificial, buscando o desenvolvimento sustentável e a inovação para os desafios do mercado de trabalho.
+                **Ferramentas utilizadas:** | Python | QGIS | Google Earth Engine | Matplotlib | Scikit-learn | Kmeans | OpenCV | 
+                **Fontes de dados:** | LANDSAT | SENTINEL | CBERS | VOOS AEROFOTOGRAMETRICOS |  
+                
+                """)
 
-        with st.expander("GIS"):
+        with st.expander("GIS"): # RETIRAR ESSA PARTE 
             st.markdown("""
                 -Estudo e desenvolvimento de **projetos práticos em Geoprocessamento**,
                  com foco na elaboração de **mapas temáticos, análise espacial e processamento de dados geoespaciais**.  
@@ -88,32 +96,23 @@ Atualmente estou ampliando minhas competências em ciência de dados aplicada, c
                 
                 """)
 
-        with st.expander('Ferramentas de Análise de dados '):            
-            st.markdown(''' Atualmente em fase final dos cursos de **Analista de BI** na escola DNC e **Aperfeiçoamento de Análise de dados pela UFMA**  
-                    - Desenvolvimento de dashboards avançados com Power BI e Excel.    
-                    - Tratamento, limpeza e organização de dados com Excel e python.      
-                    -  Aplicação de boas práticas em análise exploratória e visualização de dados.    
-                    -- **Ferramentas utilizadas :** Power BI | Excel | Python | Pandas | Numpy | SQL | Matiplotlib | requests | BeautifulSoup
-                    
-                        ''')
-        with st.expander('Ferramentas para Ciência de dados '):
-            st.markdown(''' Cursando a formação de **Cientista de dados** na escola DNC.    
-                            - Modelagem estatística, visualização de dados e construção de pipelines de machine learning.    
-                            - Desenvolvimento de aplicações interativas com Streamlit.   
-                            -- **Ferramentas utilizadas :** Python | Seaborn| Statsmodels | Scikitlearn | Streamlit | Matplotlib |
-                        ''')\
-            
-         
         
         # ----------------- EXPERIENCIAS E PROJETOS -------
         st.write('#### :coffee: Experiências Profissionais e Projetos')
 
-        
-        with st.expander('Analista em Geoprocessamento '):
+        with st.expander('Analista de Geoprocessamento Junior '):
                 st.markdown('''
-                         **INOVAGRO CONSULTORIA** Janeiro 2026 - Atual  
+                         **SCCON GEOSPATIAL LTDA** Junho 2026 - Atualmente.    
+                            Atuo na análise e classificação de imagens de satélite para identificação e monitoramento de alterações na cobertura e no uso da terra, com foco na detecção de degradação ambiental, como áreas queimadas, desmatamento e outras mudanças na paisagem.
+                            Minhas atividades incluem a interpretação visual de imagens de sensoriamento remoto, validação e classificação de feições, controle de qualidade dos dados produzidos e apoio ao monitoramento ambiental por meio de geotecnologias.
+                         
+                        ''')
+
+        with st.expander('Analista de Geoprocessamento '):
+                st.markdown('''
+                         **INOVAGRO CONSULTORIA** Janeiro 2026 - Maio 2026  
                             Realizando a produção de mapas temáticos voltados para análises ambientais utilizando imagens de 
-                         satélite voos aerofotogramétricos e bases cartograficas com QGIS. 
+                         satélite, levantamento aerofotogramétricos e bases cartograficas com QGIS. 
                             Levantamentos topográficos em campo com GNSS RTK, utilização do AutoCAD Civil 3D, para a elaboração de plantas topográficas, 
                          para entrega ao cliente.
                             Aerolevantamento com drone, posteriormente com o Agisoft Metashape é feito o processamento das
@@ -121,7 +120,7 @@ Atualmente estou ampliando minhas competências em ciência de dados aplicada, c
 
                         ''')
 
-        with st.expander('Analista em Meteorologia '):
+        with st.expander('Analista de Meteorologia '):
              st.markdown(''' **AEROESPACIAL ENGENHARIA** Novembro 2024 - Fevereiro 2025  
                          Realizando a extração, análise e o tratamento de dados meteorológicos para projetos de risco climático 
                          utilizando python e excel . 
@@ -130,7 +129,7 @@ Atualmente estou ampliando minhas competências em ciência de dados aplicada, c
 
                         ''')
 
-        with st.expander('Analista em Geoprocessamento - ESTAGIO '):
+        with st.expander('Analista de Geoprocessamento - ESTAGIO '):
              st.markdown('''
                          **INOVAGRO CONSULTORIA** Julho 2024 - Novembro 2024  
                             Realizando a produção de mapas temáticos voltados para análises ambientais utilizando imagens de 
@@ -172,31 +171,31 @@ Atualmente estou ampliando minhas competências em ciência de dados aplicada, c
        
         with st.expander('Cursos'):
             st.markdown('''
-                - Analista de BI  
-                    DNC     
+                - Geoprocessamento Básico  
+                    Curso de Formação Continuada UNB  
                         Tópicos abordados no curso  :  
-                        - Power bi - nível intermediário  
-                        - Excel - nível intermediário    
-                        - SQL -  Voltado a análise de dados   
-                        
+                        - QGIS - nível intermediário  
+                        - Estudo e desenvolvimento de **projetos práticos em Geoprocessamento**, com foco na elaboração de **mapas temáticos, análise Espacial e processamento de dados geoespaciais**.   
+                        -- **Ferramentas utilizadas:** | Python | QGIS | Streamlit | Matplotlib | Seaborn | CAD |  
+                        -- **Fontes de dados:** | LANDSAT | SENTINEL | CBERS | VOOS AEROFOTOGRAMETRICOS | 
                     ''')    
             st.markdown('''
                 - Análise de dados   
                     Universidade Federal de Maranhão    
                         Tópicos abordados no curso  :  
-                        - Power BI - nível intermediário  
-                        - Excel - nível intermediário  
-                        - SQL -  Voltado a análise de dados  
-                        
-                
-
+                         - Power BI - nível intermediário  
+                         - Excel - nível intermediário  
+                         - SQL -  Voltado a análise de dados  
+                     -- **Ferramentas utilizadas :** Power BI | Excel | Python | Pandas | Numpy | SQL | Matiplotlib | requests | BeautifulSoup
+                        '''    )
+            st.markdown('''
                 - Ciêntista de dados     
                     DNC    
                         Tópicos abordados no curso  :  
-                        - Power BI - nível intermediário
-                        - Excel - nível intermediário  
-                        - SQL -  Voltado a análise de dados  
-                          
+                         - Power BI - nível intermediário  
+                         - Excel - nível intermediário    
+                         - SQL -  Voltado a análise de dados    
+                      -- **Ferramentas utilizadas :** Python | Seaborn| Statsmodels | Scikitlearn | Streamlit | Matplotlib |     
                         
                         ''')
 
@@ -476,10 +475,7 @@ Atualmente estou ampliando minhas competências em ciência de dados aplicada, c
            
 #         
         
-    with tab4: # Data analyst
-        #
-        st.write('#### :books: Em construção ')
-        
+   
   
 
     # st.write("Ferramentas que utilizo:")
