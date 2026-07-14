@@ -72,12 +72,12 @@ def menu():
 
 
     # tab1, tab2 = st.tabs(['##### :globe_with_meridians: Maps', '##### :page_with_curl: CV'])
-    tab1, tab2, tab3 = st.tabs(['📄:page_with_curl: CV',"📄 :page_with_curl: English CV",
-                                       "🌍 :world_map: Portfolio"])
+    tab1, tab2, tab3 = st.tabs([':page_with_curl: CV'," :page_with_curl: English CV",
+                                       " :world_map: Portfolio"])
 
     with tab1: # CV
 
-        st.write('#### :books: Estudando ')
+        st.write(':books: Estudando ')
         
         with st.expander("Especialização em Inteligência Artificial Aplicada a Geotecnologias"): # documentar melhor esta parte 
             st.markdown("""
@@ -98,7 +98,7 @@ def menu():
 
         
         # ----------------- EXPERIENCIAS E PROJETOS -------
-        st.write('#### :coffee: Experiências Profissionais e Projetos')
+        st.write(':coffee: Experiências Profissionais e Projetos')
 
         with st.expander('Analista de Geoprocessamento Junior '):
                 st.markdown('''
@@ -142,7 +142,7 @@ def menu():
                         ''')
              
         #------------- FORMAÇÃO ----
-        st.write('#### :mortar_board: Formação')
+        st.write(' :mortar_board: Formação')
         with st.expander('Graduação'):
             st.markdown(''' - *Bacharelado em Meteorologia*   
                         *Universidade Federal de Santa Maria de Março 2016 a janeiro 2022*   
@@ -204,7 +204,7 @@ def menu():
         
     with tab2: # ENGLISH VERSION
         
-        st.write('#### :books: Studying ')
+        st.write(':books: Studying ')
 
         with st.expander('Data Analysis Tools '):            
             st.markdown(''' Currently in the final stage of the **BI Analyst** program at DNC School and **Data Analysis Enhancement** at UFMA  
