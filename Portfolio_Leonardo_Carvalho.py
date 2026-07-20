@@ -81,7 +81,7 @@ def menu():
         
         with st.expander("Especialização em Inteligência Artificial Aplicada a Geotecnologias"): # documentar melhor esta parte 
             st.markdown("""
-                -A especialização capacita  na análise planejamento e execução de projetos voltado para geotecnologia e gestão de dados espaciais, utilizando conceitos modernos de programação  integrando conhecimento de algoritmos em Inteligência artificial, buscando o desenvolvimento sustentável e a inovação para os desafios do mercado de trabalho.  
+                - A especialização capacita  na análise planejamento e execução de projetos voltado para geotecnologia e gestão de dados espaciais, utilizando conceitos modernos de programação  integrando conhecimento de algoritmos em Inteligência artificial, buscando o desenvolvimento sustentável e a inovação para os desafios do mercado de trabalho.  
                 **Ferramentas utilizadas:** | Python | QGIS | Google Earth Engine | Matplotlib | Scikit-learn | Kmeans | OpenCV |   
                 **Fontes de dados:** | LANDSAT | SENTINEL | CBERS | VOOS AEROFOTOGRAMETRICOS |    
                 
@@ -89,7 +89,7 @@ def menu():
 
         with st.expander("GIS"): # RETIRAR ESSA PARTE 
             st.markdown("""
-                -Estudo e desenvolvimento de **projetos práticos em Geoprocessamento**,
+                - Estudo e desenvolvimento de **projetos práticos em Geoprocessamento**,
                  com foco na elaboração de **mapas temáticos, análise espacial e processamento de dados geoespaciais**.  
                 **Ferramentas utilizadas:** | Python | QGIS | Streamlit | Matplotlib | Seaborn | CAD |  
                 **Fontes de dados:** | LANDSAT | SENTINEL | CBERS | VOOS AEROFOTOGRAMETRICOS |  
